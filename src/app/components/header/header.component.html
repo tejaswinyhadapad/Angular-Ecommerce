@@ -1,0 +1,78 @@
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
+
+    <a class="navbar-brand" style="font-size: 30px;margin:0px 0px 0px 150px;" href="#!">
+      <span style="font-family: 'Lucida Console', 'Courier New', monospace;">Ur</span><span
+        style="font-family: 'Brush Script MT', cursive;color:#FF696A;font-weight: 900;">Wardrobe</span>
+    </a>
+    <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-between" id="nav">
+
+      <form class="navbar-search pl-0 ml-8 mt-3 mb-2 mt-md-0 mb-md-0 mr-3" action="">
+        <div class="input-group d-block d-md-flex mb-0" style="padding-left:150px;">
+          <div class="input-group-prepend">
+            <input class="form-control  pl-5" type="text" placeholder="Search" aria-label="Search" style="width: 300%;">
+            <a href="#!" class="input-icon d-flex align-items-center" type="button">
+              <i class="fas fa-search  mx-3 "></i>
+            </a>
+
+          </div>
+        </div>
+      </form>
+
+
+
+      <!-- Right -->
+      <ul class="navbar-nav" style="padding-left: 120px;">
+        <li class="nav-item">
+          <a href="#!" class="nav-link navbar-link-2 waves-effect font-weight-bold px-3">
+            <i class="far fa-heart pl-0"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/cart" routerLinkActive="active"
+            class="nav-link navbar-link-2 waves-effect font-weight-bold px-3">
+            <span class="badge badge-pill badge-danger">{{items.length}}</span>
+            <i class="fas fa-shopping-cart pl-0"></i>
+          </a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a routerLink="home" routerLinkActive="active" class="nav-link waves-effect font-weight-bold px-3">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="product" routerLinkActive="active" class="nav-link waves-effect font-weight-bold px-3">
+            Products
+          </a>
+        </li>
+        <li class="nav-item d-md-none d-xl-inline-block">
+          <a href="#!" class="nav-link waves-effect font-weight-bold px-3">
+            Sign in
+          </a>
+        </li>
+        <li class="nav-item pl-2 mb-2 mb-md-0 d-md-none d-xl-inline-block">
+          <a href="#!" type="button"
+            class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">Sign
+            up</a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Links -->
+
+  </nav>
+  <!-- Navbar -->
+</header>

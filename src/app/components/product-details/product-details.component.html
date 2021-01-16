@@ -1,0 +1,60 @@
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <br>
+  <span></span>
+</div>
+<!-- <h2>Product Details</h2>
+
+<div class="row" *ngIf="product">
+  <div class="view hm-zoom z-depth-2"><img class="img-fluid rounded" [src]="product.image" /></div>
+  <div>><button class="btn btn-primary" (click)="addToCart(product)">Add To Cart</button></div>
+  <div>
+    <h3>{{ product.name }}</h3>
+    <h4>{{ product.price | currency:'INR'}}</h4>
+    <p>{{ product.description }}</p>
+
+  </div>
+
+
+</div> -->
+<div class="container">
+  <!-- <div class="row"> -->
+  <div *ngIf="product">
+    <h5 class="product-head">Product Details</h5>
+    <div class="col-sm-4">
+      <div class="view hm-zoom z-depth-2">
+        <img class="img-fluid rounded"
+          style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height:200px;width:1000px;"
+          [src]="product.image" />
+      </div>
+      <div style="margin:15px;">
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <h6>Product Price</h6><span style="color: crimson !important;">{{product.price | currency:'INR'}}</span>
+          </li>
+        </ul>
+        <button class="btn btn-primary" (click)="addToCart(product)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <table>
+        <tbody>
+          <tr>
+            <th>Product Name</th>
+            <td>{{product.name}}</td>
+          </tr>
+          <tr>
+            <th>Product Description</th>
+            <td>{{product.description}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- </div> -->
+</div>
